@@ -1,0 +1,108 @@
+:root {
+    --operadorsHover: #081621;
+    --buttonKeyHover: #222222;
+    --outlineButtons: #174163;
+    --opertadors: #0E273C;
+    --blanc: #ffffff;
+    --negre: #101010;
+    --outline: #8b0022;
+    --border: #c0c0c0;
+    --bordergray: #c6c6c6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calculator {
+    position: relative;
+    width: 250px;
+    height: 430px;
+    background-color: var(--negre);
+    margin-top: 15px;
+    outline: 2px solid var(--outlineButtons);
+    border: 0.5px solid var(--border);
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 30px 15px 25px #aaaaaa
+}
+
+.screen {
+    position: absolute;
+    top: 25px;
+    margin: 20px;
+    padding: 10px;
+    width: 75%;
+    max-height: 65px;
+    background-color: var(--negre);
+    font-size: 2.5rem;
+    text-align: right;
+    border: none;
+    color: var(--blanc);
+    outline: 0.01px dotted var(--outlineButtons);
+    overflow: hidden;
+}
+
+.second-floor {
+    position: absolute;
+    top: 150px;
+    left: 15px;
+}
+
+.key {
+    display: inline-flex;
+    width: 45px;
+    height: 45px;
+    margin: 2.5px;
+    padding: 2.5px;
+    border: none;
+    border-radius: 25px;
+    color: var(--blanc);
+    background: var(--negre);
+    outline: 0.01px dotted var(--outlineButtons);
+    font-size: 20px;
+    cursor: pointer;
+    /*text-align: center;*/
+    justify-content: center;
+}
+
+.key:hover,
+.key:focus {
+    background-color: var(--buttonKeyHover);
+}
+
+.zero {
+    width: 100px;
+}
+
+.operation {
+    background-color: var(--opertadors);
+}
+
+.operation:hover,
+.operation:focus {
+    background-color: var(--operadorsHover);
+}
+
+.brand {
+    width: 100px;
+    background-color: var(--border);
+    color: var(--negre);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.brand:hover,
+.brand:focus {
+    background-color: var(--buttonKeyHover);
+    font-size: 1.2rem;
+    color: var(--blanc);
+}
